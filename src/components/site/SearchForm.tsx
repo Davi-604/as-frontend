@@ -1,7 +1,6 @@
 'use client'
 
 import { escapeCpf } from "@/utils/escapeCpf"
-import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 type Props = {
@@ -11,7 +10,6 @@ type Props = {
 
 export const SearchForm = ({onSearchBtn, loading}: Props) => {
     const [cpfInput, setCpfInput] = useState('');
-    const router = useRouter()
 
     const handleKeyUp = (e: KeyboardEvent) => {
         if (e.code.toLowerCase() === 'enter') {
@@ -43,12 +41,6 @@ export const SearchForm = ({onSearchBtn, loading}: Props) => {
                 onClick={() => onSearchBtn(cpfInput)}
             >
                 {loading ? 'Buscando...' : 'Enviar'}
-            </button>
-            <button 
-                className="mt-5 text-lg text-gray-300 font-semibold hover:text-gray-400"
-                onClick={() => router.back()}
-            >
-                Voltar
             </button>
         </div>
     )
