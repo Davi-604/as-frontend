@@ -1,4 +1,4 @@
-# Secret Friend 🫣
+# Secret Friend - frontend 🫣
 
 ## Project developed with:
 <div style="display:inline_block">
@@ -8,7 +8,4 @@
 </div>
 </br> 
 
-- Project based on [B7web](https://lp.b7web.com.br/fullstack) course and using next's router too. 
-<br />
-
-- Click [Here](https://lp.b7web.com.br/fullstack) to access the project 🌐
+- Project based on [B7web](https://lp.b7web.com.br/fullstack) course. This project is only the front-end from the finaly project
