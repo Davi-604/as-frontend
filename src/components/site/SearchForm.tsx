@@ -1,7 +1,7 @@
 'use client'
 
 import { escapeCpf } from "@/utils/escapeCpf"
-import { useState } from "react"
+import { KeyboardEvent, useState } from "react"
 
 type Props = {
     onSearchBtn: (cpf: string) => void,
