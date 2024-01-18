@@ -31,9 +31,6 @@ export const SearchForm = ({onSearchBtn, loading}: Props) => {
                 onChange={e => setCpfInput(escapeCpf(e.target.value))}
                 onKeyUp={e => handleKeyUp(e)}
             />
-            <p className="mt-2 text-gray-400 text-sm">
-                (Digite '111', '222', '333'; para avançar)
-            </p>
             <button
                 disabled={loading}
                 className="w-full py-3 border-b-4 border-r-4 mt-5 border-blue-600 bg-blue-800 text-white text-4xl rounded-md 
