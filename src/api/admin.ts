@@ -23,7 +23,7 @@ export const getEvents = async () => {
 
 type AddEventType = {
     title: string,
-    desc: string
+    description: string
     grouped: boolean,
 }
 export const addEvent = async (data: AddEventType): Promise<Event | false> => {
@@ -36,7 +36,7 @@ export const addEvent = async (data: AddEventType): Promise<Event | false> => {
 
 type UpdateEventType = {
     title?: string,
-    desc?: string,
+    description?: string,
     grouped?: boolean,
     status?: boolean,
 }

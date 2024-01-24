@@ -38,7 +38,7 @@ export const EventTabInfo = ({event, refreshAction}: Props) => {
         setLoading(true)
         const updateEvent = await api.updateEvent(event.id, {
             title: titleField,
-            desc: descField,
+            description: descField,
             grouped: groupedField,
             status: statusField
         });

@@ -29,7 +29,7 @@ export const AddEvent = ({refreshAction}: Props) => {
         setLoading(true)
         const res = await api.addEvent({
             title: titleField,
-            desc: descField,
+            description: descField,
             grouped: groupedField,
         });
         setLoading(false);
