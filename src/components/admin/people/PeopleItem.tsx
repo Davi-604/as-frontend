@@ -11,7 +11,7 @@ type Props = {
 export const PeopleItem = ({person, onEdit, refreshPeople}: Props) => {
     const handleDeletePerson = async () => {
         if(confirm('Tem certeza de que quer excluir essa pessoa?')) {
-            await api.deletePerson(person.eventId, person.groupId, person.id);
+            await api.deletePerson(person.id_event, person.id_group, person.id);
             refreshPeople();
         }   
     }

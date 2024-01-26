@@ -31,7 +31,7 @@ export const EditPerson = ({person, refreshPeople}: Props) => {
        if (errors.length > 0) return;
 
        setLoading(true);
-       const res = await api.updatePerson(person.eventId, person.groupId, person.id, 
+       const res = await api.updatePerson(person.id_event, person.id_group, person.id, 
        { name: nameField, cpf: cpfField });
        setLoading(false);
        

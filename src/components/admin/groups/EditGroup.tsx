@@ -30,7 +30,7 @@ export const EditGroup = ({refreshGroups, group}: Props) => {
         if (errors.length > 0) return;
 
         setLoading(true);
-        const updateGroup = await api.updateGroup(group.eventId, group.id, { name: nameField })
+        const updateGroup = await api.updateGroup(group.id_event, group.id, { name: nameField })
         setLoading(false);
 
         if (updateGroup) {

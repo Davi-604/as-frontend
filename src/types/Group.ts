@@ -1,5 +1,5 @@
 export type Group = {
     id: number,
-    eventId: number,
+    id_event: number,
     name: string
 }

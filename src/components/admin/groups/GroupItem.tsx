@@ -12,7 +12,7 @@ export const GroupItem = ({refreshGroup, group, onEdit}: Props) => {
 
     const handleDeleteBtn = async () => {
         if (confirm('Tem certeza de que quer deletar esse grupo?')) {
-            await api.deleteGroup(group.eventId, group.id);
+            await api.deleteGroup(group.id_event, group.id);
             refreshGroup();
         }
     };
